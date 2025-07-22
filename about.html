@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>About Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins','sans-serif';
+    margin-top: 500px;
 }
 body{
     background: #081b29;
@@ -18,7 +20,7 @@ body{
   display: flex;
   align-items: center;        
   justify-content: center;    
-  padding: 60px;
+   padding: 140px 10% 40px;
   height: 100vh;              
   color: white;
   text-align: center;     
@@ -129,6 +131,42 @@ body{
 }
 .nav a:hover,nav a.active{
     color: aqua;
+}
+@media (max-width: 768px) {
+   
+    .about {
+        padding: 130px 7% 30px; /* increased top padding */
+    }
+    .about-content h1 {
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .nav a {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 120px 6% 20px; /* increased top padding */
+    }
+   .about-content h1 {
+        font-size: 24px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+    }
+
+    .nav a {
+        font-size: 15px;
+        margin-left: 15px;
+    }
 }
 
   </style>
