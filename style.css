@@ -246,5 +246,22 @@ body{
     .h-content p {
         font-size: 14px;
     }
+    .nav a {
+        font-size: 17px;
+        margin-left: 25px;
+    }
 }
+@media (max-width: 480px) {
+    .header {
+        padding: 12px 6%;
+    }
 
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav a {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+}
