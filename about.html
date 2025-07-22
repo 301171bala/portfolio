@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-serif';
+}
+body{
+    background: #081b29;
+
+}
+ .about {
+  display: flex;
+  align-items: center;        
+  justify-content: center;    
+  padding: 60px;
+  height: 100vh;              
+  color: white;
+  text-align: center;     
+  flex-direction: column;   
+}
+
+
+.about-content {
+  max-width: 700px;
+}
+
+.about-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #0A66C2;
+}
+
+.about-content p {
+  font-size: 18px;
+  color:white;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.header{
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 100%;
+     padding: 20px 10%;
+     background-color: rgb(63, 63, 63);
+     display: flex;
+     justify-content: space-between;
+     z-index: 100;
+     align-items: center;
+}
+/* ---------- ANIMATIONS ---------- */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  
+  
+  /* Apply animations to elements */
+  .h-content {
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  .about-content {
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  .h-sci {
+    animation: slideInRight 1.5s ease-out;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-serif';
+}
+body{
+    background: #081b29;
+
+}
+.header{
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 100%;
+     padding: 20px 10%;
+     background-color: rgb(63, 63, 63);
+     display: flex;
+     justify-content: space-between;
+     z-index: 100;
+     align-items: center;
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.nav a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+.nav a:hover,nav a.active{
+    color: aqua;
+}
+
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Portfolio.</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <section class="about">
+    <div class="about-content">
+      <h1>About Me</h1>
+      <p>
+        I'm Harini Suba Muppidathi, currently pursuing my final year in Computer Science Engineering at PET Engineering College. I'm a passionate frontend developer with a love for clean UI and creative designs. I enjoy exploring new tools and building websites that are both functional and beautiful.
+      </p>
+      <p>
+        My interests include web development, user experience design, and learning new web technologies.
+        I'm currently working on projects that help improve my real-world problem-solving and design thinking.
+      </p>
+      <p>
+        Outside of coding, I love to listen Songs, Sketching, and Singing.
+      </p>
+    </div>
+    
+  </section>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

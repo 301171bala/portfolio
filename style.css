@@ -1,0 +1,208 @@
+/* ---------- ANIMATIONS ---------- */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  
+  
+  /* Apply animations to elements */
+  .h-content {
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  .profile-pic {
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  .h-sci {
+    animation: slideInRight 1.5s ease-out;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-serif';
+}
+body{
+    background: #081b29;
+
+}
+.header{
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 100%;
+     padding: 20px 10%;
+     background-color: rgb(63, 63, 63);
+     display: flex;
+     justify-content: space-between;
+     z-index: 100;
+     align-items: center;
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.nav a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+.nav a:hover,nav a.active{
+    color: aqua;
+}
+.home{
+    position: relative;
+    width: 100%;
+    color:white;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+    height: 100vh;
+    justify-content: space-between;
+}
+.h-content{
+    max-width: 600px;
+}
+.h-content h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+.h-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+    margin:20px 0;
+}
+.h-content p{
+    font-size: 16px;
+    font-weight: 200;
+    margin: 20px 0 40px;
+}
+.h-content btn-box{
+    width:345px ;
+    height: 50px;
+}
+.btn-box a {
+    position: relative;
+    width: 150px;
+    height: 100%;
+    background-color: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-flex;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #081b29;
+    font-size: 19px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color:#081b29; 
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.btn-box a:hover {
+    color: #00abf0; 
+}
+.h-sci {
+    position: absolute;
+    width: 170px;
+    bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.h-sci a {
+    position: relative;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: #00abf0;
+    overflow: hidden;
+    transition: color 0.5s;
+}
+
+.h-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #00abf0;
+    z-index: 0;
+    transition: width 0.5s;
+}
+
+.h-sci a:hover::before {
+    width: 100%;
+}
+
+.h-sci a:hover {
+    color: #081b29;
+}
+
+.h-sci a ion-icon {
+    font-size: 22px;
+    z-index: 1; /* Make sure icon stays visible above background */
+    transition: 0.3s;
+}
+.profile-pic {
+    width: 450px; 
+    height: 450px;
+    border-radius: 50%;  
+    object-fit: cover;   
+    margin-top: 90px;
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.15);
+}
+.profile-pic:hover {
+      
+      box-shadow: 0 12px 25px rgba(0, 255, 255, 0.4);
+}
