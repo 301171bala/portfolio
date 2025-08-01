@@ -206,6 +206,7 @@ body{
       
       box-shadow: 0 12px 25px rgba(0, 255, 255, 0.4);
 }
+
 @media (max-width: 768px) {
     .home {
         flex-direction: column;
