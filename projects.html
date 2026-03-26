@@ -19,38 +19,35 @@
       color: white;
     }
 
-    .header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 20px 10%;
-      background-color: #333;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 100;
-    }
+   .header{
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 100%;
+     padding: 20px 10%;
+     background-color: rgb(63, 63, 63);
+     display: flex;
+     justify-content: space-between;
+     z-index: 100;
+     align-items: center;
+}
 
-    .logo {
-      font-size: 25px;
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .nav a {
-      font-size: 18px;
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      margin-left: 35px;
-    }
-
-    .nav a:hover,
-    .nav a.active {
-      color: aqua;
-    }
+   .logo{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.nav a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+.nav a:hover,nav a.active{
+    color: aqua;
+}
 
     .projects {
       margin-top: 100px;
@@ -97,6 +94,9 @@
   
   .projects{
     animation: fadeInUp 1.5s ease-out;
+  }
+  .scroll-container{
+    animation:fadeInUp 1.5s ease-out  ;
   }
     @media (max-width: 768px) {
       .projects {
@@ -207,7 +207,7 @@
 #skills-scroll h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #fff;
+  color: #00abf0;
 }
 
 .scroll-container {
@@ -255,6 +255,19 @@
   padding: 4px;
 
 }
+.project-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.project-section h2 {
+  font-size: 2.5rem;
+  color: #00abf0;
+  margin-bottom: 40px;
+  text-align: center;
+}
 
 
 
@@ -267,6 +280,16 @@
     transform: translateX(-50%);
   }
 }
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 /* Default mobile layout */
 .projects {
   display: block;
@@ -294,12 +317,15 @@
 }
 
 @media (max-width: 768px) {
+  .header{
+     padding: 20px 6%;
+  }
   #skills-scroll {
     padding: 60px 5% 40px;
   }
 
   #skills-scroll h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
   }
 
@@ -327,7 +353,11 @@
   .skill-item span {
     font-size: 14px;
   }
-}
+  .nav a {
+        font-size: 17px;
+        margin-left: 25px;
+    }
+
 .scroll-container {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
@@ -343,7 +373,7 @@
 }
 
 .project-section h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #00abf0;
   margin-bottom: 40px;
   text-align: center;
@@ -356,7 +386,21 @@
   width: 100%;
   max-width: 1200px;
 }
+}
+@media (max-width: 480px) {
+    .header {
+        padding: 12px 6%;
+    }
 
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav a {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+}
 
   </style>
 </head>
@@ -378,6 +422,7 @@
     <div class="skill-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
     <div class="skill-item"><i class="fab fa-microsoft"></i><span>.NET</span></div>
     <div class="skill-item"><img src="canva.png" alt="Canva" class="skill-icon"><span>Canva</span></div>
+    <div class="skill-item"><img src="python.png" alt="Python" class="skill-icon"><span>Python</span></div>
     <div class="skill-item"><i class="fab fa-figma"></i><span>Figma</span></div>
     <div class="skill-item"><i class="fab fa-github"></i><span>GitHub</span></div>
   </div>
